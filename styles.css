@@ -268,8 +268,33 @@ nav {
     color: var(--secondary-color);
 }
 
-.skill-card ul li {
-    margin: 10px 0;
+.skill-subcategory {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.skill-subcategory {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    background-color: rgba(184, 134, 11, 0.1); /* Light gold background */
+    padding: 5px 10px;
+    border-left: 3px solid var(--gold-color);
+    text-align: left;
+    display: inline-block;
+    border-radius: 0 3px 3px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 /* Projects Section */

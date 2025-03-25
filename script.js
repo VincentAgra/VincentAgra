@@ -40,3 +40,30 @@ if (contactForm) {
         this.reset();
     });
 }
+
+// CV Download functionality
+const downloadCvBtn = document.querySelector('.about-text .btn');
+
+if (downloadCvBtn) {
+    downloadCvBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Create a temporary link element
+        const link = document.createElement('a');
+        link.href = 'assets/it_cv.pdf'; // Path to your CV file
+        link.download = 'Vincent_Agra_CV.pdf'; // What the downloaded file will be named
+        
+        // Append to the body, trigger the download, then remove
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        // Optional: Show a visual confirmation
+        const originalText = this.textContent;
+        this.textContent = 'Downloading...';
+        
+        setTimeout(() => {
+            this.textContent = originalText;
+        }, 1500);
+    });
+}
