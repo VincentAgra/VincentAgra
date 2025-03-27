@@ -50,7 +50,7 @@ if (downloadCvBtn) {
         
         // Create a temporary link element
         const link = document.createElement('a');
-        link.href = 'assets/it_cv.pdf'; // Path to your CV file
+        link.href = 'assets/it_cv!.pdf'; // Path to your CV file
         link.download = 'Vincent_Agra_CV.pdf'; // What the downloaded file will be named
         
         // Append to the body, trigger the download, then remove
