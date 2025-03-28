@@ -214,7 +214,6 @@ nav {
     align-items: center;
 }
 
-/* About Image Styling - UNTOUCHED AS REQUESTED */
 .about-img {
     text-align: center;
 }
@@ -271,20 +270,6 @@ nav {
 
 .skill-subcategory {
     font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: var(--primary-color);
-    font-style: italic;
-}
-
-.skill-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: var(--secondary-color);
-}
-
-.skill-subcategory {
-    font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 15px;
     color: var(--primary-color);
@@ -298,7 +283,7 @@ nav {
     text-transform: uppercase;
 }
 
-/* Projects Section - UPDATED */
+/* Projects Section */
 #projects {
     background-color: var(--light-color);
 }
@@ -309,7 +294,6 @@ nav {
     gap: 30px;
 }
 
-/* Enhanced Project Cards */
 .project-card {
     background-color: var(--white-color);
     border-radius: 3px;
@@ -407,29 +391,6 @@ nav {
     background: var(--gold-color);
 }
 
-.contact-box h3 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: var(--secondary-color);
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-.contact-box h3::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 2px;
-    background-color: var(--gold-color);
-}
-
 .contact-grid {
     margin-top: 25px;
 }
@@ -476,17 +437,6 @@ nav {
     text-decoration: underline;
 }
 
-/* Add responsive adjustments */
-@media (max-width: 576px) {
-    .contact-row {
-        flex-direction: column;
-    }
-    
-    .contact-item {
-        margin-bottom: 10px;
-    }
-}
-
 /* Footer - Roman Theme */
 footer {
     background-color: var(--primary-color);
@@ -496,41 +446,9 @@ footer {
     padding: 30px 0;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
-}
-
-.social-links a {
-    color: white;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: var(--gold-color);
-}
-
-/* FontAwesome placeholder - Roman Theme */
-[class^="fa-"] {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    background-color: var(--gold-color);
-    margin-right: 0.5em;
-    border-radius: 50%;
-    border: 1px solid var(--primary-color);
-}
-
 /* Responsive Design */
 @media (max-width: 992px) {
     .about-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-details {
         grid-template-columns: 1fr;
     }
     
@@ -594,5 +512,13 @@ footer {
         display: block;
         width: 100%;
         text-align: center;
+    }
+    
+    .contact-row {
+        flex-direction: column;
+    }
+    
+    .contact-item {
+        margin-bottom: 10px;
     }
 }
