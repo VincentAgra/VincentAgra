@@ -30,17 +30,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission (placeholder)
-const contactForm = document.querySelector('.contact-form form');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Thank you for your message! This is a demo form, so no message was actually sent.');
-        this.reset();
-    });
-}
-
 // CV Download functionality
 const downloadCvBtn = document.querySelector('.about-text .btn');
 
@@ -50,7 +39,7 @@ if (downloadCvBtn) {
         
         // Create a temporary link element
         const link = document.createElement('a');
-        link.href = 'assets/it_cv!.pdf'; // Path to your CV file
+        link.href = 'assets/cv/VincentAgra_SoftwareDeveloper_Resume.pdf'; // Path to your CV file
         link.download = 'Vincent_Agra_CV.pdf'; // What the downloaded file will be named
         
         // Append to the body, trigger the download, then remove
